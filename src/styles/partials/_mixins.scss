@@ -1,0 +1,32 @@
+@use '../variables' as *;
+
+/* global font handler */
+@mixin handleFont ($size, $lh, $weight) {
+    font-size: $size;
+    line-height: $lh;
+    font-weight: $weight;
+}
+
+/* media queries */
+@mixin tablet {
+    @media screen and (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+/* margin for desktop */
+@mixin desk-margin-width {
+    max-width: 1020px;
+    margin: 0 auto;
+}
+
+/* border radius */
+@mixin border-radius {
+    border-radius: 8px;
+}
