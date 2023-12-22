@@ -1,0 +1,86 @@
+@use "../../styles/partials/colors" as *;
+@use "../../styles/partials/fonts" as *;
+@use "../../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+
+.header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include tablet {
+        height: 80px;
+    }
+
+    &__logo {
+        height: 80%;
+
+        @include tablet {
+            height: 57%;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 1rem;
+
+        &--mbl {
+            @include tablet {
+                display: none;
+            }
+        }
+
+        &--tab-desk {
+            display: none;
+
+            @include tablet {
+                display: flex;
+                gap: 1rem;
+            }
+        }
+
+        &-list {
+            display: flex;
+            gap: 1rem
+        }
+
+        &-item {
+            list-style: none;
+            font-size: 1rem;
+            font-weight: bold;
+
+            &:hover {
+                border-bottom: 1px solid $green;
+                cursor: pointer;
+                color: $green;
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__button {
+        border-radius: 16px;
+        border: 1px solid $black;
+        height: fit-content;
+        padding-block: .25rem;
+        padding-inline: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+
+
+        &:hover {
+            cursor: pointer;
+            background-color: $green;
+            border-color: white;
+            color: white;
+        }
+    }
+}

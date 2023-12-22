@@ -1,26 +1,55 @@
 @font-face {
-    font-family: "Avenir";
-    src: url('../../assets/fonts/WOOFs/AvenirNextLTPro-Regular.woff'),
-        url('../../assets/fonts/WOOFs/AvenirNextLTPro-Regular.woff2');
+    font-family: "Black Mango";
+    src: url('../../assets/fonts/black-mango-font/BlackMango-Thin.otf');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Black Mango";
+    src: url('../../assets/fonts/black-mango-font/BlackMango-ExtraLight.otf');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Black Mango";
+    src: url('../../assets/fonts/black-mango-font/BlackMango-Light.otf');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Avenir";
-    src: url('../../assets/fonts/WOOFs/AvenirNextLTPro-Demi.woff'),
-        url('../../assets/fonts/WOOFs/AvenirNextLTPro-Demi.woff');
+    font-family: "Black Mango";
+    src: url('../../assets/fonts/black-mango-font/BlackMango-Regular.otf');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: "Avenir";
-    src: url('../../assets/fonts/WOOFs/AvenirNextLTPro-Bold.woff'),
-        url('../../assets/fonts/WOOFs/AvenirNextLTPro-Bold.woff2');
+    font-family: "Black Mango";
+    src: url('../../assets/fonts/black-mango-font/BlackMango-Medium.otf');
     font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Black Mango";
+    src: url('../../assets/fonts/black-mango-font/BlackMango-SemiBold.otf');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Black Mango";
+    src: url('../../assets/fonts/black-mango-font/BlackMango-Bold.otf');
+    font-weight: 900;
     font-style: normal;
     font-display: swap;
 }

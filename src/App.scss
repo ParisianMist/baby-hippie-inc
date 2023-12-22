@@ -1,3 +1,29 @@
-div {
-    background-color: white;
+@use "./styles/partials/fonts" as *;
+@use "./styles/partials/colors" as *;
+@use "./styles/partials/mixins" as *;
+@use "./styles/partials/variables" as *;
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "Black Mango";
+    margin: 0;
+    color: $black;
+}
+
+.main-body {
+    background-color: $cream;
+    width: 100%;
+
+    padding-inline: 16px;
+
+    @include tablet {
+        padding-inline: 36px;
+    }
+
+    @include desktop {
+        padding-inline: 96px;
+    }
 }

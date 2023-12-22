@@ -1,9 +1,12 @@
 import './App.scss';
 
+import Header from '../src/components/Header/Header';
+
+
 function App() {
   return (
-    <div>
-     HELLO MARGARET
+    <div className='main-body'>
+     <Header/>
     </div>
   );
 }
