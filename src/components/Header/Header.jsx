@@ -11,16 +11,20 @@ const Header = () => {
 
     return (
         <div className='header'>
-            <img src={bhLogo} alt="baby hippie logo" className="header__logo" />
-            <ul className="header__nav--tab-desk">
-                <li className="header__nav-item">about</li>
-                <li className="header__nav-item">services</li>
-                <li className="header__nav-item">blog</li>
-            </ul>
+            <a href="/" className="header__logo-link">
+                <img src={bhLogo} alt="baby hippie logo" className="header__logo" />
+            </a>
+            <div className="header__nav--tab-desk">
+                <a href="/about" className="header__nav-item">about</a>
+                <a href="/services" className="header__nav-item">servies</a>
+                <a href="/blog" className="header__nav-item">blog</a>
+            </div>
             <div className="header__nav">
-                <div className="header__button">
+                <a href="/services" className="header__button">
                     book appointment
-                </div>
+                </a>
+
+                {/* use state to bring up mobile menu */}
                 <img src={iconMblMenu} alt="" className="header__nav--mbl" />
 
             </div>
